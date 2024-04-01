@@ -19,7 +19,11 @@ $(window).on("scroll", function(){
         $(".text").removeClass("visible");
     }
 });
+
+// Function for the tabs and description of the website
 $(window).on("click", function(){
+    // if tab-# is checked, the class visible will be attach and the others will have it remove
+    // In turn make that tab the only visible one
         if($("#tab-1").is(':checked')){
             $("#content-item-1").addClass("visible");
             $("#content-item-2").removeClass("visible");

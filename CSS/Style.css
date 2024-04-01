@@ -17,15 +17,13 @@ p, h2, li, h1, footer a{
     color: #0e0e0e;
 }
 h1{
+    font-size: 1.5em;
     font-weight: bold;
 }
 /* Header Section */
 header{
     width: 100%;
-    height: 10vh;
     position: fixed;
-    display: flex;
-    justify-content: space-between;
 }
 .logo-border{
     position: absolute;
@@ -36,18 +34,8 @@ header{
     width: 260px;
     background: #f8f8f8;
     border-radius: 50% 50% 50% 50%;
-    transition: .5s ease-in-out;
-    box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
     cursor: pointer;
     border: solid .2em rgba(14,14,14,1);
-}
-header div{
-    width: auto;
-    height: 100%;
-}
-.logo-box{
-    width: auto;
-    height: 100%;
 }
 header div img{
     width: 8em;
@@ -139,9 +127,6 @@ label .menu-bar:before{
 .menu-candy input{
     display: none;
 }
-.gallery input{
-    display: none;
-}
 .menu-candy input:checked + .menu-bar .hamburger{
     top: 160px;
     left: 80px;
@@ -200,7 +185,6 @@ label menu{
     width: auto;
     height: 280vh;
     display: flex;
-    flex-direction: column;
     position: relative;
 }
 .masthead .cover{
@@ -218,9 +202,10 @@ label menu{
     z-index: -1;
     bottom: 80vh;
     height: 25vw;
+    width: auto;
 }
 .masthead h1{
-    font-size: 12vh;
+    font-size: 10em;
     color: #f8f8f8;
     font-family: "candy-font";
     text-shadow: 10px 10px 8px rgba(14,14,14,.9);
@@ -229,7 +214,6 @@ label menu{
     padding-top: 30vh;
     position: sticky;
     top: -12vw;
-    z-index: 100;
 }
 @font-face{
     font-family: "candy-font";
@@ -368,7 +352,9 @@ label menu{
     position: relative;
     z-index: -1;
 }
-
+.gallery input{
+    display: none;
+}
     /* tabs */
 .gallery .tab-container{
     display: grid;
@@ -490,11 +476,11 @@ footer .column .other-social{
     justify-content: space-evenly;
 }
 .social i{
-    font-size: 3em;
+    font-size: 2.5em;
 }
 footer .column form input{
     width: 90%;
-    padding: 5px;
+    padding: .5em;
 }
 footer .column:nth-child(2){
     display: flex;
