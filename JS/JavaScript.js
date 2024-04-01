@@ -4,7 +4,7 @@ $(window).on("scroll", function(){
     }else{
         $(".cover").removeClass("scrolledHeader");
     }
-    if($(this).scrollTop() > 2400){
+    if($(this).scrollTop() > 2200){
         $(".frame-1 .explosion").addClass("expand");
         $(".frame-1 .package").addClass("expand");
         $(".frame-1 .berry").addClass("expand");
@@ -13,7 +13,7 @@ $(window).on("scroll", function(){
         $(".frame-1 .package").removeClass("expand");
         $(".frame-1 .berry").removeClass("expand");
     }
-    if($(this).scrollTop() > 2500){
+    if($(this).scrollTop() > 2250){
         $(".text").addClass("visible");
     }else{
         $(".text").removeClass("visible");
